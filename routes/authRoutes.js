@@ -1,7 +1,7 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../models/User");
+const User = require("../models/user");
 
 const router = express.Router();
 
@@ -12,7 +12,7 @@ router.post("/register", async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const user = await User.create({
+    const newUser = await User.create({
       name,
       email,
       password: hashedPassword
@@ -20,7 +20,7 @@ router.post("/register", async (req, res) => {
 
     res.json({
       message: "User Registered",
-      user
+      user: newUser
     });
 
   } catch (error) {

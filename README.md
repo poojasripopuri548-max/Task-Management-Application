@@ -68,7 +68,7 @@ project-folder/
 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git https://github.com/poojasripopuri548-max/Task-Management-Application
 ```
 
 2. Install dependencies
