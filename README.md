@@ -1,83 +1,124 @@
-# Task Management Application
+# 🚀 Task Management Application
 
-## Overview
+A full-stack Task Management Application built using **Node.js, Express.js, MongoDB, JWT Authentication, HTML, CSS, and JavaScript**.
 
-Task Management Application is a full-stack web application that allows users to register, log in, create tasks, update task status, view tasks, and delete tasks.
+It allows users to securely register, log in, and manage their daily tasks with a clean and responsive interface.
 
-This project was developed as part of a Full Stack Development assignment to understand frontend-backend integration, authentication, database operations, and CRUD functionality.
+---
 
-## Features
+## 🌐 Live Demo
 
-* User Registration
-* User Login
-* JWT Authentication
-* Create Tasks
-* View Tasks
-* Mark Tasks as Completed
-* Delete Tasks
-* Responsive User Interface
-* MongoDB Database Integration
+🔗 Frontend: https://taskmangements.netlify.app/  
+🔗 Backend API: https://task-management-application-yj88.onrender.com  
 
-## Technologies Used
+---
 
-### Frontend
+## ✨ Features
 
-* HTML
-* CSS
-* JavaScript
+### 🔐 Authentication
+- User Registration & Login
+- Secure password hashing (bcryptjs)
+- JWT-based authentication
+- Protected routes
 
-### Backend
+### 📋 Task Management
+- Create tasks
+- View all tasks
+- Update tasks
+- Mark tasks as completed
+- Delete tasks
+- User-specific task storage
 
-* Node.js
-* Express.js
+### 🎨 UI/UX
+- Responsive design
+- Mobile-friendly layout
+- Clean and simple interface
+- Real-time updates after actions
 
-### Database
+---
 
-* MongoDB
+## 🛠️ Tech Stack
 
-### Authentication
+**Frontend:**
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
 
-* JSON Web Token (JWT)
+**Backend:**
+- Node.js
+- Express.js
 
-## Project Structure
+**Database:**
+- MongoDB Atlas
+- Mongoose
 
-project-folder/
+**Authentication:**
+- JWT (JSON Web Token)
+- bcryptjs
 
-├── public/
+**Deployment:**
+- Netlify (Frontend)
+- Render (Backend)
 
-│ ├── index.html
+---
 
-│ ├── style.css
+## 📂 Project Structure
 
-│ └── script.js
+
+task-management-app/
 
 ├── models/
 
+│   ├── user.js
+
+│   └── task.js
+
 ├── routes/
+
+│   ├── authRoutes.js
+
+│   └── taskRoutes.js
 
 ├── middleware/
 
-├── server.js
+│   └── authMiddleware.js
+
+├── public/
+
+│   ├── index.html
+
+│   ├── style.css
+
+│   └── script.js
+
+├── .env
 
 ├── package.json
 
+├── server.js
+
 └── README.md
 
-## Installation
+---
 
-1. Clone the repository
+## ⚙️ Installation & Setup
+
+### 1. Clone Repository
 
 ```bash
-git https://github.com/poojasripopuri548-max/Task-Management-Application
+git clone https://github.com/poojasripopuri548-max/task-management-app.git
+cd task-management-app
 ```
 
-2. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-3. Configure MongoDB connection in .env file
+### 3. Create Environment Variables
+
+Create a `.env` file in the root directory:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -85,27 +126,80 @@ JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
-4. Start the application
+### 4. Start Application
+
+```bash
+npm start
+```
+
+or
 
 ```bash
 npm run dev
 ```
 
-5. Open in browser
+### 5. Open Browser
 
 ```text
 http://localhost:5000
 ```
 
-## Learning Outcomes
+---
+
+## 🔑 API Endpoints
+
+### Authentication
+
+| Method | Endpoint           | Description   |
+| ------ | ------------------ | ------------- |
+| POST   | /api/auth/register | Register User |
+| POST   | /api/auth/login    | Login User    |
+
+### Tasks
+
+| Method | Endpoint       | Description   |
+| ------ | -------------- | ------------- |
+| GET    | /api/tasks     | Get All Tasks |
+| POST   | /api/tasks     | Create Task   |
+| PUT    | /api/tasks/:id | Update Task   |
+| DELETE | /api/tasks/:id | Delete Task   |
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helped in understanding:
 
 * Full Stack Application Development
-* REST API Integration
+* REST API Design
 * MongoDB Database Operations
-* JWT Authentication
+* JWT Authentication & Authorization
 * CRUD Operations
-* Frontend and Backend Communication
+* Frontend & Backend Integration
+* Deployment using Netlify and Render
+* Git & GitHub Version Control
 
-## Author
+---
 
-Pooja Sri
+## 📸 Screenshots
+
+Add screenshots here after uploading:
+
+* Registration Page
+* Login Page
+* Dashboard
+* Task List
+
+---
+
+## 👩‍💻 Author
+
+**Pooja Sri**
+
+GitHub: https://github.com/poojasripopuri548-max
+
+---
+
+## ⭐ Acknowledgement
+
+Developed as part of a Full Stack Development Internship Assignment to demonstrate authentication, database integration, API development, and task management functionality.
