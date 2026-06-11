@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://task-management-application-yj88.onrender.com/api";
 
 let token = localStorage.getItem("token");
 
